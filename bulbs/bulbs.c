@@ -14,14 +14,10 @@ int main(void)
     {
         int character = word[i];
 
-        for( bit_counter = 7; bit_counter > -1; bit_counter-- )
+        for (bit_counter = 7; bit_counter > -1; bit_counter--)
         {
             // shift the character bit over and compare it to a 1
             print_bulb((character >> bit_counter) & 1);
-        }
-        for(int x = 0; x < bits.length; x++)
-        {
-            print_bulb[x];
         }
         printf("\n");
 
